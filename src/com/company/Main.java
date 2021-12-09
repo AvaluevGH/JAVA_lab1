@@ -11,8 +11,9 @@ public class Main {
         potatoes1.system_print();
         potatoes2.system_print();
         potatoes3.system_print();
-
         Potatoes[] breakfast = new Potatoes[6];
+
+
         breakfast[0] = new Potatoes("Фри", 150  );
         breakfast[1] = new Potatoes("Варенная", 80);
         breakfast[2] = new Potatoes("Жаренная", 100);
@@ -40,6 +41,9 @@ public class Main {
         }
         System.out.println("Завтрак состоит из "+ count1+" Варенной, "+count2+" Жаренной, "+count3+" Фри Картошки");
         int cal = 0;
-
+        for (Potatoes potatoes : breakfast) {
+            cal+=potatoes.calculateCalories();
+        }
+        System.out.println("Общее число калорий завтрака: " + cal);
     }
 }

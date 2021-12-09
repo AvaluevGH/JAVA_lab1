@@ -1,6 +1,6 @@
 package com.company;
 
-public class Potatoes  {
+public class Potatoes implements Nutritious  {
     int  calories;
     String type;
 
@@ -14,5 +14,8 @@ public class Potatoes  {
 
     }
 
+
+    @Override
+    public int calculateCalories() { return this.calories;}
 
 }
