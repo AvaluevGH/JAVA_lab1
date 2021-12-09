@@ -28,6 +28,7 @@ public class Main {
             if (Objects.equals(potatoes.type, "Варенная")) {
                 count1++;
             }
+
         }
         for (Potatoes potatoes : breakfast) {
             if (Objects.equals(potatoes.type, "Жаренная")) {

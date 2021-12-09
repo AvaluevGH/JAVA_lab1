@@ -14,7 +14,6 @@ public class Potatoes implements Nutritious  {
 
     }
 
-
     @Override
     public int calculateCalories() { return this.calories;}
 
